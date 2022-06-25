@@ -1,0 +1,38 @@
+{
+  "name": "@shoopi/whatsapp-cloud-api-plugin-discord",
+  "version": "0.0.1",
+  "description": "Discord bot plugin for whatsapp cloud api ",
+  "main": "dist/index.js",
+  "scripts": {
+    "watch": "tsc -w",
+    "build": "tsc",
+    "lint": "eslint . --ext .ts",
+    "lint-and-fix": "eslint . --ext .ts --fix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ShoopiApp/whatsapp-cloud-api-plugin-discord.git"
+  },
+  "author": "Shoopi",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/ShoopiApp/whatsapp-cloud-api-plugin-discord/issues"
+  },
+  "homepage": "https://github.com/ShoopiApp/whatsapp-cloud-api-plugin-discord#readme",
+  "dependencies": {
+    "@discordjs/builders": "^0.15.0",
+    "@discordjs/rest": "^0.5.0",
+    "discord-api-types": "^0.34.0",
+    "discord.js": "^13.8.0"
+  },
+  "peerDependencies": {
+    "@shoopi/whatsapp-cloud-api-cache": "^0.0.1",
+    "@shoopi/whatsapp-cloud-api-responder": "^0.0.1"
+  },
+  "devDependencies": {
+    "@types/node": "^18.0.0",
+    "@typescript-eslint/eslint-plugin": "^5.29.0",
+    "@typescript-eslint/parser": "^5.29.0",
+    "eslint": "^8.18.0"
+  }
+}
