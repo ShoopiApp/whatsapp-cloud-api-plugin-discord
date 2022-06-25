@@ -1,6 +1,6 @@
 {
   "name": "@shoopi/whatsapp-cloud-api-plugin-discord",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "description": "Discord bot plugin for whatsapp cloud api ",
   "main": "dist/index.js",
   "scripts": {
@@ -26,7 +26,7 @@
     "discord.js": "^13.8.0"
   },
   "peerDependencies": {
-    "@shoopi/whatsapp-cloud-api-cache": "^0.0.1",
+    "@shoopi/whatsapp-cloud-api-cache": "^0.0.2",
     "@shoopi/whatsapp-cloud-api-responder": "^0.0.1"
   },
   "devDependencies": {

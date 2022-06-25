@@ -1,27 +1,4 @@
 "use strict";
-var __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {
-    if (k2 === undefined) k2 = k;
-    var desc = Object.getOwnPropertyDescriptor(m, k);
-    if (!desc || ("get" in desc ? !m.__esModule : desc.writable || desc.configurable)) {
-      desc = { enumerable: true, get: function() { return m[k]; } };
-    }
-    Object.defineProperty(o, k2, desc);
-}) : (function(o, m, k, k2) {
-    if (k2 === undefined) k2 = k;
-    o[k2] = m[k];
-}));
-var __setModuleDefault = (this && this.__setModuleDefault) || (Object.create ? (function(o, v) {
-    Object.defineProperty(o, "default", { enumerable: true, value: v });
-}) : function(o, v) {
-    o["default"] = v;
-});
-var __importStar = (this && this.__importStar) || function (mod) {
-    if (mod && mod.__esModule) return mod;
-    var result = {};
-    if (mod != null) for (var k in mod) if (k !== "default" && Object.prototype.hasOwnProperty.call(mod, k)) __createBinding(result, mod, k);
-    __setModuleDefault(result, mod);
-    return result;
-};
 var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
     function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
     return new (P || (P = Promise))(function (resolve, reject) {
@@ -66,7 +43,7 @@ var discord_js_1 = require("discord.js");
 var path_1 = __importDefault(require("path"));
 var node_fs_1 = __importDefault(require("node:fs"));
 var whatsapp_cloud_api_responder_1 = __importDefault(require("@shoopi/whatsapp-cloud-api-responder"));
-var whatsapp_cloud_api_cache_1 = __importStar(require("@shoopi/whatsapp-cloud-api-cache"));
+var whatsapp_cloud_api_cache_1 = require("@shoopi/whatsapp-cloud-api-cache");
 var deploy_commands_1 = require("./deploy-commands");
 var DiscorBot = /** @class */ (function () {
     function DiscorBot() {
@@ -225,7 +202,6 @@ var DiscorBot = /** @class */ (function () {
     };
     DiscorBot.getInstance = function () {
         if (!DiscorBot.instance) {
-            whatsapp_cloud_api_cache_1.default.getInstance().init();
             DiscorBot.instance = new DiscorBot();
         }
         return DiscorBot.instance;

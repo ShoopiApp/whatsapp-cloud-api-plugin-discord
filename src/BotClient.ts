@@ -115,10 +115,8 @@ export default class DiscorBot {
 
   public static getInstance(): DiscorBot {
     if (!DiscorBot.instance) {
-      Cache.getInstance().init();
       DiscorBot.instance = new DiscorBot();
     }
-
     return DiscorBot.instance;
   }
 
